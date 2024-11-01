@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+  background-color: #e6b2d1;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 4em; /* Aumentado de 3.5em a 4em */
+  margin: 20px 0;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5), 3px 3px #b45a7e;
+  border-bottom: 3px solid #b45a7e;
+  padding-bottom: 10px;
+}
+
+/* Estilos para secciones */
+.section {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section:nth-child(odd) {
+  background-color: #d8a3c7;
+}
+
+.section:nth-child(even) {
+  background-color: #f3c1dd;
+}
+
+.section-title {
+  font-size: 2em; /* Aumentado de 1.5em a 2em */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fdfdfd;
+  text-shadow: 1px 1px #8e4a6e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #ffe6f0;
+  font-size: 1.5em; /* Aumentado de 1.2em a 1.5em */
+}
+
+.item-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.5em; /* Aumentado de 1.2em a 1.5em */
+}
+
+.item-list li {
+  margin: 5px 0;
+  color: #ffffff;
+  text-shadow: 1px 1px #8e4a6e;
+}
+
+/* Sección especial para postres de temporada */
+.seasonal {
+  background-color: #b45a7e;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-shadow: 1px 1px #8e4a6e;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.seasonal .section-title {
+  color: #ffe6f0;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 3em; /* Aumentado de 2.5em a 3em */
+  }
+
+  .section-title {
+    font-size: 1.8em; /* Aumentado de 1.3em a 1.8em */
+  }
+
+  .item-list {
+    font-size: 1.2em; /* Aumentado de 1em a 1.2em */
+  }
+
+  .icon {
+    font-size: 1.2em; /* Aumentado de 1em a 1.2em */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.5em; /* Aumentado de 2em a 2.5em */
+  }
+
+  .section-title {
+    font-size: 1.5em; /* Aumentado de 1em a 1.5em */
+  }
+
+  .item-list {
+    font-size: 1.1em; /* Aumentado de 0.9em a 1.1em */
+  }
+
+  .item-list li {
+    margin: 3px 0;
+  }
+
+  .App {
+    padding: 5px;
+  }
+}
