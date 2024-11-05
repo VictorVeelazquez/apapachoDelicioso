@@ -83,6 +83,10 @@ body {
 
 /* Diseño responsivo */
 @media (max-width: 768px) {
+  body, .App, .title, .section-title, .item-list {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
   .App {
     padding: 10px;
   }
@@ -105,6 +109,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  body, .App, .title, .section-title, .item-list {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
   .title {
     font-size: 2.5em; /* Aumentado de 2em a 2.5em */
   }
